@@ -1,0 +1,1208 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+
+
+/*
+font-family: 'Berkshire Swash', cursive;
+font-family: 'Josefin Sans', sans-serif;
+*/
+
+.header{
+    width: 100%;
+    display: flex;
+    background: #fff;
+    
+}
+.header .logo{
+    width: 30%;
+    padding: 10px;
+    background-image: url('img/fresco-logo-pequeno.png');
+    background-repeat: no-repeat;
+    background-position: left;
+    margin-left: 60px;
+    
+}
+.header .menu-principal{
+    width: 65%;
+
+}
+.header .menu-principal ul{
+    display: flex;
+    padding: 28px 20px 28px 20px;
+    margin-left: 170px;
+    
+}
+.header .menu-principal .menu-item{
+    list-style: none;
+    margin-left: 30px;
+}
+
+.header .menu-principal .menu-item a{
+    text-decoration: none;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 16px;
+    color: #292827;
+    padding: 30px 3px 30px 3px;
+    font-weight: 400;
+
+}
+.header .menu-principal .menu-item a:hover{
+    color: #ff8800;
+}
+.header .menu-principal .menu-item .btn-contato{
+    background-color: #ff8800;
+    padding: 15px 40px 15px 40px;
+    color: #fff;
+    border-radius: 50px;
+
+}
+.header .menu-principal .menu-item .btn-contato:hover{
+    background-color: #b96708;
+    color: #fff;
+}
+
+
+
+
+.container{
+    width: 100%;
+    height: 100vh;
+
+}
+.container .above-folder{
+    width: 100%;
+    height: 100%;
+    background-image: url('img/pizzaria-hero-fundo01.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    opacity: .9;
+    
+    /*
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, .5);
+    */
+}
+
+.container .section_above_folder{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    
+    
+}
+
+.container .overlay{
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    opacity: .4;
+    position: absolute;
+}
+
+
+.section_above_folder .imge-up-title{
+    background-image: url('img/barra-horizontal.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 80px;
+    width: 100%;
+    z-index: 1;
+    margin-top: 235px;
+}
+.section_above_folder .title-fresco{
+    width: 100%;
+    margin: 10px 0px 10px 0px;
+    font-family: 'Berkshire Swash', cursive;
+    font-size: 100px;
+    font-weight: 300;
+    color: #EEE;
+    text-align: center;
+    z-index: 1;
+}
+
+.section_above_folder .subT-fresco{
+    width: 100%;
+    margin: 20px 0px 10px 0px;
+    font-family: 'Josefin Sans', sans-serif;
+    color: #ff8800;
+    font-size: 35px; 
+    font-weight: 400;
+    text-align: center;
+    z-index: 1;
+}
+
+.section_above_folder .line{
+    width: 380px;
+    margin: 7px auto 20px auto;
+    border-bottom: 2px #292827 solid;
+}
+ 
+.section_above_folder .description{
+    width: 100%;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight:  100;
+    font-size: 30px;
+    text-align: center;
+    color: #eee;
+    font-style: italic;
+    z-index: 1;
+}
+ .section-promotion{
+    width: 100%;
+    background-image: url('img/folha-fundo-02.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-attachment: fixed;
+    position: relative;
+ }
+ 
+ .section-promotion .overlay-2{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    opacity: .7;
+    z-index: 0;
+    position: absolute;
+ }
+
+ .promotion{
+    display: flex;
+    width: 100%;
+    padding-bottom: 80px;
+ }
+
+ .promotion .section-1, .section-2, .section-3{
+    width: 33%;
+    padding-bottom: 80px;
+    z-index: 1;
+ }
+
+ .promotion .section-1 .paragraph-1{
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    color: #292827;
+    text-align: left;
+    margin: 50px 0 10px 60px;
+ }
+
+ .promotion .section-1 h2{
+    font-family: 'Berkshire Swash', cursive;
+    font-size: 70px;
+    color: #c66300;
+    text-align: left;
+    margin: 20px 0 10px 60px;  
+ }
+ 
+ .promotion .section-1 .description{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 35px;
+    color: #292827;
+    text-align: left;
+    font-weight: 600;
+    margin: 20px 0 10px 60px;
+    line-height: 45px;     
+ }
+
+ .promotion .section-1 .paragraph-2{
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #292827;
+    text-align: left;
+    line-height: 29px;
+    margin: 20px 0 10px 60px;
+ }
+
+ .promotion .section-1 .btn-more{
+    width: 100%;
+    display: flex;
+ }
+
+ .promotion .section-1 .btn-more a{
+    width: 50%;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 16px;    
+    padding: 15px 20px;
+    text-align: center;
+    text-decoration: none;
+    color: #fff; 
+    font-weight: 500;
+    background-color: #071013;
+    border-radius: 50px;
+    margin: 20px auto;
+ }
+ .promotion .section-1 .btn-more a:hover{
+    background-color: #c66300;    
+ }
+
+ .promotion .section-2{
+    background-image: url('img/pizza.jpg');
+    background-position: top center;
+    background-size: 90%; 
+    background-repeat: no-repeat;
+    margin-top: 20px;
+ }
+
+ .promotion .section-3{
+    background-image: url('img/restaurante02.jpg');
+    background-position: top center;
+    background-size: 90%; 
+    background-repeat: no-repeat;
+    margin-top: 20px;
+ }
+ 
+ .promotion .section-3 .restaurante{
+     width: 100%;
+     margin-top: 520px;
+ }
+ .promotion .section-3 .restaurante h3{
+    font-family: 'Berkshire Swash', cursive;
+    font-size: 50px;
+    font-weight: normal;
+    color: #fff;
+    text-align: center;
+ }
+ .promotion .section-3 .restaurante p{
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 16px;
+    text-align: center;
+    color: #fff;
+    font-weight: 600;
+    padding-top: 30px;
+ }
+
+ .cardapio{
+    width: 100%;
+    background-color: #fffaf2;
+ }
+ .cardapio .cardapio-header{
+    width: 60%;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 60px;
+ }
+
+.cardapio .cardapio-header .folha{
+    height: 100px;
+    background-image: url('img/folha-fundo-01.png');
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: 16%;
+}
+ .cardapio .cardapio-header h3{
+    font-family: 'Berkshire Swash', cursive;
+    font-size: 50px;
+    color: #C66300;
+    line-height: 65px;
+ }
+
+  .cardapio .cardapio-header p{
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 30px;
+    line-height: 55px;
+    font-weight: bold;
+    color: #292827;
+ }
+
+ .cardapio-itens{
+    width: 90%;
+    margin: 50px auto;
+    display: flex;
+ }
+
+ .cardapio-itens .item-left, .item-right{
+    width: 50%;
+    
+ }
+ .cardapio-itens .item-left .cardapio-item, 
+ .cardapio-itens .item-right .cardapio-item{
+    width: 100%;
+    margin: 20px;
+    display: flex;
+    
+ }
+
+ .cardapio-itens .item-left img, 
+ .cardapio-itens .item-right img{
+    width: 180px;
+ }
+ .cardapio-itens .item-left .card-title-price, 
+ .cardapio-itens .item-right .card-title-price{
+    width: 47%;
+    margin: 5px 1px 10px 10px;
+ }
+
+ .cardapio-itens .item-left .card-title-price .card-item-title, 
+ .cardapio-itens .item-right .card-title-price .card-item-title{
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    color: #292827;
+ }
+ .cardapio-itens .item-left .card-title-price .card-item-desc,
+ .cardapio-itens .item-right .card-title-price .card-item-desc{
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    font-style: italic;
+    color: #292827; 
+    margin-top: 10px; 
+ }
+
+.cardapio-itens .item-left .price,
+.cardapio-itens .item-right .price{
+    width: 100px;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 30px;
+    color: #c66300;
+    font-weight: bold;
+    font-style: italic;
+    margin-top: 10px;
+    
+}
+
+.cardapio .btn-more-cardapio{
+   display: flex;
+   width: 100%;
+   margin-top: 50px;
+   /*background-color: red;*/
+   padding: 0 0 90px;
+}
+
+.cardapio .btn-more-cardapio a{
+   width: 342px;
+   margin: 0 auto;
+   font-family: 'Josefin Sans', sans-serif;
+   font-size: 16px;
+   text-align: center;
+   text-decoration: none;
+   color: #fff;
+   padding: 18px;
+   background-color: #f6820a;
+   border-radius: 50px;
+}
+.cardapio .btn-more-cardapio a:hover{
+   background-color: #c66300;
+}
+
+.happy-hour{
+   width: 100%;
+   background-image: url('img/folha-fundo-02.jpg');
+   background-position: center center;
+   background-repeat: no-repeat;
+   background-size: 100%;
+   background-attachment: fixed;
+   min-height: 100vh;
+}
+.happy-hour .happy-overlay{
+   display: flex;
+   width: 100%;
+   height: 100%;
+   background-color: #fff;
+   opacity: .7;
+   z-index: 0;
+   position: absolute;
+}
+
+.happy-hour .happy-div{
+   width: 90%;
+   margin: 0 auto;
+   display: flex;
+   
+}
+
+.happy-hour .happy-div .happy-div-left, 
+.happy-hour .happy-div .happy-div-right{
+   width: 50%;
+   margin: 60px 0;
+   z-index: 1;
+}
+.happy-hour .happy-div .happy-div-left img{
+   width: 98%;
+}
+
+.happy-hour .happy-div .happy-div-right .happy-icon-cup{
+   width:50%;
+   margin: 20px auto;
+   display: flex;
+}
+
+.happy-hour .happy-div .happy-div-right .happy-icon-cup img{
+   width: 25%;
+   margin: 0 auto;
+}
+
+.happy-hour .happy-div .happy-div-right .happy-title{
+   width: 100%;
+
+}
+.happy-hour .happy-div .happy-div-right .happy-title .happy-days{
+   font-family: 'Josefin Sans', cursive;
+   font-size: 18px;
+   font-weight: 500;
+   color: #292827;
+   text-align: center;
+}
+
+.happy-hour .happy-div .happy-div-right .happy-title h3{
+   font-family: 'Berkshire Swash', sans-serif;
+   font-size: 36px;
+   font-weight: normal;
+   color: #c66300;
+   text-align: center;
+   line-height: 50px;
+   margin-top: 15px;
+}
+
+.happy-hour .happy-div .happy-div-right .happy-title .happy-description{
+   font-family: 'Josefin Sans', cursive;
+   font-size: 25px;
+   font-weight: 500;
+   color: #292827;
+   text-align: center;
+   line-height: 45px;
+   margin-top: 15px;
+}
+
+.happy-hour .happy-div .happy-div-right .happy-btn{
+   width: 100%;
+   margin: 40px 0px;
+   display: flex;
+}
+
+.happy-hour .happy-div .happy-div-right .happy-btn a{
+   width: 50%;
+   background-color: #ff8800;
+   padding: 10px;
+   margin: 0 auto;
+   font-family: 'Josefin Sans', cursive;
+   font-size: 20px;
+   font-weight: 500;
+   color: #fff;
+   text-align: center;
+   text-decoration: none;
+   border-radius: 50px;
+}
+
+.happy-hour .happy-div .happy-div-right .happy-btn a:hover{
+   background-color: #C66300;
+}
+
+.call-to-reserve{
+   width: 100%;
+   min-height: 100vh;
+   display: flex;
+   background-image: url('img/pizzaria-hero-fundo02.jpg');
+   background-size: 100%;
+   background-position: center center;
+   background-repeat: no-repeat;
+   
+}
+
+.call-to-reserve .call-to-overlay{
+   width: 100%;
+   height: 100%;
+   background-color: #292827;
+   opacity: .8;
+   z-index: o;
+   display: flex;
+   position: absolute;
+}
+
+.call-to-reserve .call-to-contents{
+   width: 60%;
+   margin: 0 auto;
+   display: flex;
+   flex-direction: column;
+   z-index: 0;
+}
+.call-to-reserve .call-to-contents .call-to-icon-phone{
+   display: flex;
+   width: 50%;
+   margin: 150px auto 50px  auto;
+   
+}
+.call-to-reserve .call-to-contents .call-to-icon-phone img{
+   width: 20%;
+   margin: 0 auto;
+}
+.call-to-reserve .call-to-contents .call-to-content{
+   width: 100%;
+}
+.call-to-reserve .call-to-contents .call-to-content h2{
+   font-family: 'Berkshire Swash', sans-serif;
+   font-size: 35px;
+   color: #ccc;
+   text-align: center;
+   font-weight: normal;
+}
+
+.call-to-reserve .call-to-contents .call-to-content p{
+   font-family: 'Josefin Sans', cursive;
+   font-size: 80px;
+   color: #ccc;
+   text-align: center;
+   font-weight: bold;
+}
+
+.cardapio-destaque{
+   width: 100%;
+   min-height: 100vh;
+   background-image: url('img/destaque-cardapio.jpg');
+   background-repeat: no-repeat;
+   background-size: 100%;
+   background-position: center center;
+   display: flex;
+}
+
+.cardapio-destaque .cardapio-overlay{
+   width: 100%;
+   height: 100%;
+   background-color: #000;
+   opacity: .5;
+   position: absolute;
+  
+}
+
+.cardapio-destaque .cardapio-title{
+   width: 100%;
+   margin-top: 160px;
+   z-index: 1;
+}
+
+.cardapio-destaque .cardapio-title h1{
+   font-family: 'Berkshire Swash', sans-serif;
+   font-size: 100px;
+   line-height: 120px;
+   color: #fff;
+   font-weight: normal;
+   margin: 40px 0px 10px 80px;
+}
+
+.cardapio-destaque .cardapio-img-prefix{
+   width: 250px;
+   height: 27px;
+   background-image: url('img/barra-horizontal.png'); 
+   background-position: center center;
+   background-size: 100%;
+   background-repeat: no-repeat;
+   margin: 0px 80px;
+}
+
+.massas{
+   width: 100%;
+   height: 100%;
+   display: flex;
+   background-image: url('img/folha-fundo-02.jpg');
+   background-size: 100%;
+   background-position: center center;
+   background-repeat: no-repeat;
+   background-attachment: fixed;
+   position: relative;
+   padding-bottom: 110px;
+}
+
+.massas .massas-overlay{
+   width: 100%;
+   min-height: 100%;
+   background-color: #fff;
+   opacity: .8;
+   position: absolute;
+
+}
+
+.massas .massas-left{
+   width: 50%;
+   height: 100%;
+   z-index: 1;
+   margin-top: 150px;
+}
+
+.massas .massas-left img{
+   width: 550px;
+   height: 709px;
+   margin-left: 100px;
+}
+
+.massas .massas-right{
+   width: 50%;
+   margin-top: 150px;
+   z-index: 1;
+}
+.massas .massas-right .massas-title{
+   width: 90%;
+   margin: 0 auto;
+}
+
+.massas .massas-right .massas-title .massas-h2{
+   font-family: 'Berkshire Swash', sans-serif;
+   font-size: 50px;
+   font-weight: normal;
+   color: #ff770f;
+}
+
+.massas .massas-right .massas-title .massas-divisor-preto{
+   width: 25%;
+   height: 29px;
+   background-image: url('img/divisor-preto.png');
+   background-size: 100%;
+   background-repeat: no-repeat;
+   background-position: center center;
+   margin: 20px 0 20px;
+}
+.massas .massas-right .massas-itens{
+   width: 90%;
+   margin: 0 auto;
+}
+.massas .massas-right .massas-itens .massa-item{
+   width: 100%;
+   display: flex;
+   margin-bottom: 30px;
+}
+.massas .massas-right .massas-itens .massa-item .content{
+   width: 80%;
+}
+.massas .massas-right .massas-itens .massa-item .content h2{
+   font-family: 'Josefin Sans', cursive;
+   font-size: 28px;
+   color: #000;
+   line-height: 50px;
+   font-weight: 600;
+   margin-bottom: 15px;
+}
+.massas .massas-right .massas-itens .massa-item .content p{
+   font-family: 'Josefin Sans', cursive;
+   font-size: 16px;
+   font-style: italic;
+   color: #292727;
+   line-height: 29px;
+   font-weight: 400;
+}
+.massas .massas-right .massas-itens .massa-item .massa-price{
+   width: 80px;
+   font-family: 'Berkshire Swash', sans-serif;
+   font-size: 30px;
+   font-weight: normal;
+   color: #c66300;
+}
+
+/*#####################################################*/
+.pizza{
+   width: 100%;
+   height: 100%;
+   display: flex;
+   background: #fffaf2;
+   padding-bottom: 110px;
+}
+
+.pizza .pizza-right{
+   width: 50%;
+   height: 100%;
+   z-index: 1;
+   margin-top: 150px;
+
+}
+
+.pizza .pizza-right img{
+   width: 550px;
+   height: 709px;
+   margin-left: 50px;
+}
+
+.pizza .pizza-left{
+   width: 50%;
+   margin-top: 150px;
+   z-index: 1;
+
+}
+.pizza .pizza-left .pizza-title{
+   width: 90%;
+   margin: 0 0 0 10%;
+}
+
+.pizza .pizza-left .pizza-title .pizza-h2{
+   width: 90%;
+   font-family: 'Berkshire Swash', sans-serif;
+   font-size: 50px;
+   font-weight: normal;
+   color: #ff770f;
+   margin-left: 10%;
+}
+
+.pizza .pizza-left .pizza-title .pizza-divisor-preto{
+   width: 25%;
+   height: 29px;
+   background-image: url('img/divisor-preto.png');
+   background-size: 100%;
+   background-repeat: no-repeat;
+   background-position: center center;
+   margin: 20px  50px;
+}
+.pizza .pizza-left .pizza-itens{
+   width: 90%;
+   margin: 0 0 0 10%;
+}
+.pizza .pizza-left .pizza-itens .pizza-item{
+   width: 90%;
+   display: flex;
+   margin-bottom: 30px;
+   margin-left: 8%;
+}
+.pizza .pizza-left .pizza-itens .pizza-item .content{
+   width: 80%;
+}
+.pizza .pizza-left .pizza-itens .pizza-item .content h2{
+   font-family: 'Josefin Sans', cursive;
+   font-size: 28px;
+   color: #000;
+   line-height: 50px;
+   font-weight: 600;
+   margin-bottom: 15px;
+}
+.pizza .pizza-left .pizza-itens .pizza-item .content p{
+   font-family: 'Josefin Sans', cursive;
+   font-size: 16px;
+   font-style: italic;
+   color: #292727;
+   line-height: 29px;
+   font-weight: 400;
+}
+.pizza .pizza-left .pizza-itens .pizza-item .pizza-price{
+   width: 80px;
+   font-family: 'Berkshire Swash', sans-serif;
+   font-size: 30px;
+   font-weight: normal;
+   color: #c66300;
+}
+/*#####################################################*/
+
+.pratos{
+   width: 100%;
+   height: 100%;
+   display: flex;
+   background-image: url('img/folha-fundo-02.jpg');
+   background-size: 100%;
+   background-position: center center;
+   background-repeat: no-repeat;
+   background-attachment: fixed;
+   position: relative;
+   padding-bottom: 110px;
+}
+
+.pratos .pratos-overlay{
+   width: 100%;
+   min-height: 100%;
+   background-color: #fff;
+   opacity: .8;
+   position: absolute;
+
+}
+
+.pratos .pratos-left{
+   width: 50%;
+   height: 100%;
+   z-index: 1;
+   margin-top: 150px;
+}
+
+.pratos .pratos-left img{
+   width: 550px;
+   height: 709px;
+   margin-left: 100px;
+}
+
+.pratos .pratos-right{
+   width: 50%;
+   margin-top: 150px;
+   z-index: 1;
+}
+.pratos .pratos-right .pratos-title{
+   width: 90%;
+   margin: 0 auto;
+}
+
+.pratos .pratos-right .pratos-title .pratos-h2{
+   font-family: 'Berkshire Swash', sans-serif;
+   font-size: 50px;
+   font-weight: normal;
+   color: #ff770f;
+}
+
+.pratos .pratos-right .pratos-title .pratos-divisor-preto{
+   width: 25%;
+   height: 29px;
+   background-image: url('img/divisor-preto.png');
+   background-size: 100%;
+   background-repeat: no-repeat;
+   background-position: center center;
+   margin: 20px 0 20px;
+}
+.pratos .pratos-right .pratos-itens{
+   width: 90%;
+   margin: 0 auto;
+}
+.pratos .pratos-right .pratos-itens .pratos-item{
+   width: 100%;
+   display: flex;
+   margin-bottom: 30px;
+}
+.pratos .pratos-right .pratos-itens .pratos-item .content{
+   width: 80%;
+}
+.pratos .pratos-right .pratos-itens .pratos-item .content h2{
+   font-family: 'Josefin Sans', cursive;
+   font-size: 28px;
+   color: #000;
+   line-height: 50px;
+   font-weight: 600;
+   margin-bottom: 15px;
+}
+.pratos .pratos-right .pratos-itens .pratos-item .content p{
+   font-family: 'Josefin Sans', cursive;
+   font-size: 16px;
+   font-style: italic;
+   color: #292727;
+   line-height: 29px;
+   font-weight: 400;
+}
+.pratos .pratos-right .pratos-itens .pratos-item .pratos-price{
+   width: 80px;
+   font-family: 'Berkshire Swash', sans-serif;
+   font-size: 30px;
+   font-weight: normal;
+   color: #c66300;
+}
+
+.quem-somos-section{
+   display: flex;
+   width:100%;
+   height: 100%;
+   background-color: #F5F5F5;
+
+}
+.quem-somos-section .quem-somos-content{
+   width: 90%;
+   margin: 60px auto;
+   background-color: #fff;
+   padding-bottom: 40px;
+}
+
+.quem-somos-section .quem-somos-content h1{
+   width: 80%;
+   margin: 70px auto 10px auto;
+   font-family: 'Berkshire Swash', sans-serif;
+   font-size: 30px;
+   font-weight: normal;
+   color: #292827;
+   
+}
+/*#####################################################*/
+
+.quem-somos-section .quem-somos-content .quem-somos-call-to-reserve{
+   width: 80%;
+   margin: 25px auto 10px auto;
+   min-height: 100vh;
+   display: flex;
+   background-image: url('img/pizzaria-hero-fundo02.jpg');
+   background-size: 100%;
+   background-position: center center;
+   background-repeat: no-repeat;
+}
+
+.quem-somos-section .quem-somos-content .quem-somos-call-to-reserve .quem-somos-call-to-overlay{
+   width: 72%;
+   height: 100%;
+   background-color: #292827;
+   opacity: .8;
+   z-index: 0;
+   display: flex;
+   position: absolute;
+}
+
+.quem-somos-call-to-reserve .quem-somos-call-to-contents{
+   width: 60%;
+   margin: 0 auto;
+   display: flex;
+   flex-direction: column;
+   z-index: 0;
+}
+.quem-somos-call-to-reserve .quem-somos-call-to-contents .quem-somos-call-to-icon-phone{
+   display: flex;
+   width: 50%;
+   margin: 150px auto 50px  auto;
+   
+}
+.quem-somos-call-to-reserve .quem-somos-call-to-contents .quem-somos-call-to-icon-phone img{
+   width: 20%;
+   margin: 0 auto;
+}
+.quem-somos-call-to-reserve .quem-somos-call-to-contents .quem-somos-call-to-content{
+   width: 100%;
+}
+.quem-somos-call-to-reserve .quem-somos-call-to-contents .quem-somos-call-to-content h2{
+   font-family: 'Berkshire Swash', sans-serif;
+   font-size: 35px;
+   color: #ccc;
+   text-align: center;
+   font-weight: normal;
+}
+
+.quem-somos-call-to-reserve .quem-somos-call-to-contents .quem-somos-call-to-content p{
+   font-family: 'Josefin Sans', cursive;
+   font-size: 80px;
+   color: #ccc;
+   text-align: center;
+   font-weight: bold;
+}
+
+/*#####################################################*/
+.news-section{
+   display: flex;
+   width:100%;
+   height: 100%;
+   background-color: #F5F5F5;
+
+}
+.news-section .news-content{
+   width: 90%;
+   margin: 60px auto;
+   background-color: #fff;
+   padding-bottom: 40px;
+}
+
+.news-section .news-content .news-article-h1{
+   width: 80%;
+   margin: 70px auto 0px auto;
+   font-family: 'Berkshire Swash', sans-serif;
+   font-size: 100px;
+   font-weight: normal;
+   color: #292827;
+   
+}
+.news-section .news-content .news-divisor{
+   width: 30%;
+   height: 46px;
+   margin: 0px 0px 10px 50px;
+   background-image: url('img/divisor-preto.png');
+   background-repeat: no-repeat;
+   background-size: 60%;
+   background-position: center center;
+}
+
+.news-section .news-content .news-box{
+   width: 80%;
+   margin: 0 auto;
+   display: flex;
+}
+.news-section .news-content .news-box .news-artigo1,
+                                      .news-artigo2, 
+                                      .news-artigo3{
+width: 32%;
+margin: 0 auto;
+}
+.news-section .news-content .news-box .news-artigo1{
+   position: relative;
+   background-image: url('img/prato02-300x255.jpg');
+   background-position: center center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   padding-bottom: 40px;
+   display: flex;
+   flex-direction: column; 
+}
+.news-section .news-content .news-box .news-artigo1 .news-artigo-overlay{
+   width: 100%;
+   height: 100%;
+   background-color: #fff;
+   opacity: 0.8;
+   z-index: 0;
+   position: absolute;
+}
+.news-section .news-content .news-box .news-artigo1 .news-artigo-title{
+   font-family: 'Josefin Sans', cursive;
+   font-size: 40px;
+   color: #313131;
+   margin: 15px;
+   z-index: 1;
+}
+.news-section .news-content .news-box .news-artigo1 .news-artigo-date{
+   font-family: 'Josefin Sans', cursive;
+   font-size: 12px;
+   font-weight: 400;
+   color: #777;
+   text-transform: uppercase;
+   margin: 3px 15px;
+   z-index: 1;
+}
+.news-section .news-content .news-box .news-artigo1 .news-artigo-coments{
+   font-family: 'Josefin Sans', cursive;
+   font-size: 11px;
+   font-weight: 400;
+   color: #777;
+   text-transform: uppercase;
+   margin: 2px 15px;
+   z-index: 1;
+}
+.news-section .news-content .news-box .news-artigo1 p{
+   font-family: 'Josefin Sans', cursive;
+   font-size: 16px;
+   font-weight: 500;
+   color: #313131;
+   line-height: 29px;
+   margin: 20px 15px;
+   z-index: 1;
+}
+.news-section .news-content .news-box .news-artigo2{
+   position: relative;
+   background-image: url('img/restaurante01.jpg');
+   background-position: center center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   padding-bottom: 40px;
+   display: flex;
+   flex-direction: column;
+}
+.news-section .news-content .news-box .news-artigo2 .news-artigo-overlay{
+   width: 100%;
+   height: 100%;
+   background-color: #fff;
+   opacity: 0.8;
+   z-index: 0;
+   position: absolute;
+}
+.news-section .news-content .news-box .news-artigo2 .news-artigo-title{
+   font-family: 'Josefin Sans', cursive;
+   font-size: 40px;
+   color: #313131;
+   margin: 15px;
+   z-index: 1;
+}
+.news-section .news-content .news-box .news-artigo2 .news-artigo-date{
+   font-family: 'Josefin Sans', cursive;
+   font-size: 12px;
+   font-weight: 400;
+   color: #777;
+   text-transform: uppercase;
+   margin: 3px 15px;
+   z-index: 1;
+}
+.news-section .news-content .news-box .news-artigo2 .news-artigo-coments{
+   font-family: 'Josefin Sans', cursive;
+   font-size: 11px;
+   font-weight: 400;
+   color: #777;
+   text-transform: uppercase;
+   margin: 2px 15px;
+   z-index: 1;
+}
+.news-section .news-content .news-box .news-artigo2 p{
+   font-family: 'Josefin Sans', cursive;
+   font-size: 16px;
+   font-weight: 500;
+   color: #313131;
+   line-height: 29px;
+   margin: 20px 15px;
+   z-index: 1;
+}
+.news-section .news-content .news-box .news-artigo3{
+   position: relative;
+   background-image: url('img/restaurante02.jpg');
+   background-position: center center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   padding-bottom: 40px;
+   display: flex;
+   flex-direction: column;
+}
+.news-section .news-content .news-box .news-artigo3 .news-artigo-overlay{
+   width: 100%;
+   height: 100%;
+   background-color: #fff;
+   opacity: 0.8;
+   z-index: 0;
+   position: absolute;
+}
+.news-section .news-content .news-box .news-artigo3 .news-artigo-title{
+   font-family: 'Josefin Sans', cursive;
+   font-size: 40px;
+   color: #313131;
+   margin: 15px;
+   z-index: 1;
+}
+.news-section .news-content .news-box .news-artigo3 .news-artigo-date{
+   font-family: 'Josefin Sans', cursive;
+   font-size: 12px;
+   font-weight: 400;
+   color: #777;
+   text-transform: uppercase;
+   margin: 3px 15px;
+   z-index: 1;
+}
+.news-section .news-content .news-box .news-artigo3 .news-artigo-coments{
+   font-family: 'Josefin Sans', cursive;
+   font-size: 11px;
+   font-weight: 400;
+   color: #777;
+   text-transform: uppercase;
+   margin: 2px 15px;
+   z-index: 1;
+}
+.news-section .news-content .news-box .news-artigo3 p{
+   font-family: 'Josefin Sans', cursive;
+   font-size: 16px;
+   font-weight: 500;
+   color: #313131;
+   line-height: 29px;
+   margin: 20px 15px;
+   z-index: 1;
+}
+/*#####################################################*/
+.footer{
+   width: 100%;
+   min-height: 50px;
+   background-color: #292827;
+   border-top: #353433 2px solid;
+
+}
+.footer .copy{
+   width: 100%;
+   display: flex; 
+}
+.footer .copy p{
+   width: 60%;
+   font-family: 'Josefin Sans', sans-serif;
+   font-size: 16px;
+   color: #fff;
+   text-align: right;
+   margin-top: 20px;
+}
+.footer .copy a{
+   width: 40%;
+   font-family: 'Josefin Sans', sans-serif;
+   font-size: 16px;
+   color: #ff8800;
+   text-align: left;
+   text-decoration: none;
+   margin-top: 20px; 
+   margin-left: 2px;    
+}
+ /*
+ 
+   margin: 20px 0 10px 60px;
+    padding: 15px 0px;
+    border-radius: 50px;*/
+
+
+
+
+
+
+
